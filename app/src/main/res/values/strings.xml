@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FirtsProget</string>
+    <string name="title_home">Мой профиль</string>
+    <string name="title_dashboard">Преподаватели</string>
+    <string name="title_notifications">Мероприятия</string>
+    <string name="Full_Name">Ф И О</string>
+    <string name="Manager">Должность</string>
+    <string name="Button_redact"> Редактировать </string>
+    <string name="Button_Save"> Save </string>
+    <string name="FIO_ON_Prepod">ФАМИЛИЯ ИМЯ ОТЧЕСТВО</string>
+    <string name="JobName"> Должность </string>
+    <string name="Date"> 29.10.24 </string>
+    <string name="Name_Event"> Качалка </string>
+    <string name="Zapis"> Запись </string>
+    <string name="Bolezni1">аллергия</string>
+    <string name="Bolezni2">сахарный диабет </string>
+    <string name="Bolezni3">гастрит</string>
+    <string name="Bolezni4">гепатит</string>
+    <string name="Bolezni5">пиелонефрит</string>
+    <string name="Bolezni6">фиброз</string>
+
+
+
+</resources>
