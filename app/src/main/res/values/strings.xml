@@ -18,6 +18,11 @@
     <string name="Bolezni4">гепатит</string>
     <string name="Bolezni5">пиелонефрит</string>
     <string name="Bolezni6">фиброз</string>
+    <string name="title_register">Регистрация</string>
+    <string name="register_text_field">Введите ваши данные для регистрации</string>
+    <string name="register_btm_field_In">Отмена</string>
+    <string name="register_btm_field_Input">Зарегистрироваться</string>
+
 
 
 
