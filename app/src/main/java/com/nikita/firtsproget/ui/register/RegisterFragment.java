@@ -24,27 +24,34 @@ public class RegisterFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.register_profel, container, false);
 
+        // Инициализация UI элементов
         editTextEmail = view.findViewById(R.id.editTextTextEmailAddress);
         editTextPassword = view.findViewById(R.id.editTextTextPassword);
         buttonRegister = view.findViewById(R.id.Btm_in);
         buttonCancel = view.findViewById(R.id.Btm_input);
 
-        buttonRegister.setOnClickListener(v -> registerUser ());
-        buttonCancel.setOnClickListener(v -> getActivity().finish()); // Закрывает текущую активность
+        // Установка слушателей для кнопок
+        buttonRegister.setOnClickListener(v -> registerUser());
+        buttonCancel.setOnClickListener(v -> {
+            if (getActivity() != null) {
+                getActivity().finish();
+            }
+        });
 
         return view;
     }
 
-    private void registerUser () {
+    private void registerUser() {
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
 
+        // Валидация полей
         if (email.isEmpty() || password.isEmpty()) {
             Toast.makeText(getActivity(), "Пожалуйста, заполните все поля", Toast.LENGTH_SHORT).show();
             return;
         }
 
+        // Симуляция успешной регистрации
         Toast.makeText(getActivity(), "Регистрация успешна", Toast.LENGTH_SHORT).show();
-        // Здесь можно добавить логику для регистрации пользователя
     }
 }
