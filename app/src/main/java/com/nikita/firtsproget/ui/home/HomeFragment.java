@@ -66,8 +66,8 @@ public class HomeFragment extends Fragment {
                 args.putBooleanArray("selectedDiets", selectedDiets);
                 notificationsFragment.setArguments(args);
 
-                // Здесь добавьте код для перехода к NotificationsFragment
-                // Например, используя FragmentManager
+
+
                 getActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.checkBox, notificationsFragment) // Убедитесь, что у вас есть контейнер с этим ID
                         .addToBackStack(null)

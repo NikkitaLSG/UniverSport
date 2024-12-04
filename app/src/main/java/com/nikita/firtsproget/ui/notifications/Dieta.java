@@ -51,7 +51,6 @@ public class Dieta {
                 availableDiets.add(diets.get(i));
             }
         }
-
         // Если доступные диеты есть, верните случайную
         if (!availableDiets.isEmpty()) {
             return availableDiets.get(random.nextInt(availableDiets.size()));
